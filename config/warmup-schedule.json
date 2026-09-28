@@ -1,0 +1,10 @@
+{
+  "_comment": "Daily cap per inbox by days since its warmup_start. The router uses the highest step reached, limited by the inbox's own max_cap.",
+  "steps": [
+    {"day": 0, "cap": 5},
+    {"day": 4, "cap": 10},
+    {"day": 8, "cap": 15},
+    {"day": 11, "cap": 20},
+    {"day": 14, "cap": 25}
+  ]
+}

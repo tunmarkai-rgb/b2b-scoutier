@@ -1,0 +1,11 @@
+{
+  "_comment": "One city at a time. Exactly one city should have status `active`. Move to the next only once the current city's pool is thin or the motion is proven.",
+  "cities": [
+    {"city": "Toronto", "region": "ON", "country": "CA", "status": "active"},
+    {"city": "Vancouver", "region": "BC", "country": "CA", "status": "queued"},
+    {"city": "Calgary", "region": "AB", "country": "CA", "status": "queued"},
+    {"city": "London", "region": "England", "country": "UK", "status": "queued"},
+    {"city": "Manchester", "region": "England", "country": "UK", "status": "queued"},
+    {"city": "Birmingham", "region": "England", "country": "UK", "status": "queued"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "_comment": "Machine-readable rules the scripts enforce. CLAUDE.md explains them in prose. Every TODO in `sender` must be filled in before anything can be sent (compliance.py blocks otherwise).",
+  "review_mode": "manual",
+  "min_icp_score": 50,
+  "daily_new_prospects_target": 40,
+  "max_touches": 3,
+  "follow_up_days": [3, 4],
+  "send_delay_seconds": [60, 180],
+  "reply_lookback_days": 14,
+  "allowed_countries": ["CA", "UK"],
+  "sender": {
+    "name": "TODO Your Name",
+    "title": "Founder",
+    "company": "TUNMARK",
+    "website": "TODO https://your-site.com",
+    "physical_address": "TODO Street, City, Province/County, Country",
+    "opt_out_line": "Not relevant? Just reply \"stop\" and I won't reach out again."
+  }
+}

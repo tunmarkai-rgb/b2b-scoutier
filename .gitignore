@@ -1,0 +1,23 @@
+# Secrets
+.env
+inboxes.json
+
+# Live CRM data (prospect PII) - never commit to this public repo
+contacts/*.csv
+contacts/*.tmp
+outreach/queue/*.md
+outreach/sent-log.md
+outreach/replies/
+outreach/work/
+outreach/dry-run-preview.md
+reports/*.html
+logs/
+.locks/
+
+# Python / OS
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
+~$*

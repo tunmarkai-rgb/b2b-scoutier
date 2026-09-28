@@ -1,0 +1,31 @@
+{
+  "_comment": "Copy to inboxes.json (init_data.py does this). warmup_start = the day the inbox began sending cold email. daily_cap_override pins a cap (null = follow the warm-up schedule). Set enabled=false to pause an inbox.",
+  "inboxes": [
+    {
+      "id": "tm1",
+      "address": "you@your-domain.com",
+      "display_name": "Your Name",
+      "enabled": true,
+      "warmup_start": "2026-09-28",
+      "max_cap": 25,
+      "daily_cap_override": null,
+      "smtp_host": "smtp.gmail.com",
+      "smtp_port": 587,
+      "imap_host": "imap.gmail.com",
+      "imap_port": 993
+    },
+    {
+      "id": "tm2",
+      "address": "you@your-second-domain.com",
+      "display_name": "Your Name",
+      "enabled": false,
+      "warmup_start": "2026-09-28",
+      "max_cap": 25,
+      "daily_cap_override": null,
+      "smtp_host": "smtp.gmail.com",
+      "smtp_port": 587,
+      "imap_host": "imap.gmail.com",
+      "imap_port": 993
+    }
+  ]
+}

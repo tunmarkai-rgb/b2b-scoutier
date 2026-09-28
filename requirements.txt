@@ -1,0 +1,3 @@
+# Everything runs on the Python standard library.
+# Optional: faster, more reliable MX lookups than the nslookup fallback.
+dnspython>=2.6

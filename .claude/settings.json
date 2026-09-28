@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/*)",
+      "Bash(python3 scripts/*)",
+      "WebSearch",
+      "WebFetch",
+      "Read",
+      "Glob",
+      "Grep",
+      "Write(outreach/work/**)",
+      "Edit(outreach/work/**)"
+    ],
+    "deny": [
+      "Edit(contacts/**)",
+      "Write(contacts/**)",
+      "Edit(outreach/sent-log.md)",
+      "Write(outreach/sent-log.md)",
+      "Read(.env)"
+    ]
+  }
+}

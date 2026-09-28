@@ -1,0 +1,37 @@
+{
+  "_comment": "Deterministic ICP scoring used by `python scripts/crm.py score`. The enrichment skill records `category` and semicolon-separated `signals` keys from the lists below; the score is the sum, capped at 100. Leads at or above settings.min_icp_score become Qualified.",
+  "employee_range": [5, 50],
+  "categories": {
+    "marketing_agency": 20,
+    "real_estate": 20,
+    "clinic_medspa": 20,
+    "b2b_saas": 20,
+    "staffing_recruiting": 20,
+    "home_services": 15,
+    "ecommerce_wholesale": 15,
+    "b2b_services_other": 12,
+    "b2b_products_other": 12,
+    "other": 0
+  },
+  "size_points": {
+    "in_range": 20,
+    "near_range": 10,
+    "unknown": 8
+  },
+  "signals": {
+    "sells_to_businesses_confirmed": 10,
+    "hiring_growth_role": 20,
+    "paid_ads_no_outbound": 15,
+    "founder_posts_about_pipeline": 15,
+    "stale_website_or_crm": 10,
+    "recent_funding_or_expansion": 10,
+    "owner_reachable_directly": 5
+  },
+  "disqualifiers": [
+    "sells_only_to_consumers",
+    "enterprise_500_plus",
+    "franchise_corporate_controlled",
+    "existing_client",
+    "direct_competitor"
+  ]
+}
