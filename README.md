@@ -38,6 +38,8 @@ Replies ─► Follow-ups ─► Prospect (web search) ─► Enrich + MX check 
 5. **Proof points:** replace the `TODO` results for The Realty Network and BLEAK Group in `CLAUDE.md` with verified outcomes.
 6. **Existing clients:** add each one with `python scripts/crm.py dnc --company "Name" --domain their.com --reason "existing client"`.
 7. **Check it:** `python scripts/inbox_router.py status` should show each inbox with a cap and no `imap_error`.
+8. **Tests:** `python -m unittest discover -s tests -v` runs the whole pipeline (dedupe, compliance, caps, sending,
+   threading, replies, bounces, suppression, report) in a temp folder with fake DNS/SMTP/IMAP. Your real data is untouched.
 
 ## Daily use
 

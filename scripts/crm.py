@@ -27,8 +27,11 @@ PROTECTED = {"lead_id", "created_at"}
 
 
 def _load_items(path):
-    src = sys.stdin if path == "-" else open(path, encoding="utf-8")
-    data = json.load(src)
+    if path == "-":
+        data = json.load(sys.stdin)
+    else:
+        with open(path, encoding="utf-8") as fh:
+            data = json.load(fh)
     return [data] if isinstance(data, dict) else data
 
 

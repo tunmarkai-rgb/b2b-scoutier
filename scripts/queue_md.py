@@ -108,8 +108,11 @@ def cancel_for_lead(lead_id, reason):
 
 
 def cmd_add(args):
-    src = sys.stdin if args.json == "-" else open(args.json, encoding="utf-8")
-    items = json.load(src)
+    if args.json == "-":
+        items = json.load(sys.stdin)
+    else:
+        with open(args.json, encoding="utf-8") as fh:
+            items = json.load(fh)
     if isinstance(items, dict):
         items = [items]
     leads = {r["lead_id"]: r for r in read_csv("prospects")}
